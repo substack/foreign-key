@@ -8,7 +8,7 @@ g.add('equipment', [ 'type', 'item' ], 'space');
 
 var db = require('level')('/tmp/foreign-test', { valueEncoding: 'json' });
 db.batch(require('./hackers.json').map(function (row) {
-    return { type: 'put', key: g.key('name', row), value: row };
+    return { type: 'put', key: g.key(row.name, row), value: row };
 }));
 
 db.createReadStream()
