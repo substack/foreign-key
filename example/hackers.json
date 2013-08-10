@@ -3,10 +3,14 @@
   { "type": "hacker", "name": "substack", "space": "sudoroom"},
   { "type": "hackerspace", "name": "noisebridge" },
   { "type": "hacker", "name": "mitch", "space": "nosiebridge" },
+  { "type": "item", "name": "makerbot", "space": "sudoroom" },
+  { "type": "item", "name": "piano", "space": "sudoroom" },
   { "type": "hacker", "name": "mk30", "space": "sudoroom" },
   { "type": "hacker", "name": "rwolfe", "space": "i3" },
+  { "type": "item", "name": "makerbot", "space": "noisebridge" },
   { "type": "hacker", "name": "ioerror", "space": "noisebridge" },
   { "type": "hacker", "name": "wrought", "space": "sudoroom" },
   { "type": "hacker", "name": "nbritsky", "space": "i3" },
+  { "type": "item", "name": "laser cutter", "space": "noisebridge" },
   { "type": "hackerspace", "name": "i3" }
 ]

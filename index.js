@@ -17,13 +17,15 @@ Foreign.prototype.add = function (targetKey, filter, key) {
 };
 
 Foreign.prototype.key = function (fkey, row) {
+    
     if (match(row, this.primary)) {
-        return encode([].concat(fkey));
+        return encode([ row[fkey] ]);
     }
     
     for (var key in this.keyMap) {
         if (match(row, this.keyMap[key])) {
-            return encode([].concat(this.keyMap[key], fkey));
+            
+            return encode([].concat(row[this.keyMap[key][0]], row[fkey]));
         }
     }
     return undefined;
