@@ -63,8 +63,7 @@ output:
   name: 'noisebridge',
   equipment: 
    [ { type: 'item', name: '3d printer', space: 'noisebridge' },
-     { type: 'item', name: 'laser cutter', space: 'noisebridge' },
-     { type: 'item', name: 'makerbot', space: 'noisebridge' } ],
+     { type: 'item', name: 'laser cutter', space: 'noisebridge' } ],
   hackers: 
    [ { type: 'hacker', name: 'ioerror', space: 'noisebridge' },
      { type: 'hacker', name: 'mitch', space: 'nosiebridge' } ] }
@@ -72,7 +71,6 @@ output:
   name: 'sudoroom',
   equipment: 
    [ { type: 'item', name: '3d printer', space: 'sudoroom' },
-     { type: 'item', name: 'makerbot', space: 'sudoroom' },
      { type: 'item', name: 'piano', space: 'sudoroom' } ],
   hackers: 
    [ { type: 'hacker', name: 'mk30', space: 'sudoroom' },
