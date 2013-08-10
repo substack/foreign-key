@@ -108,7 +108,7 @@ from added secondary rows into primary rows.
 
 # install
 
-With [npm](https://npmjs.org) dO;
+With [npm](https://npmjs.org) do:
 
 ```
 npm install foreign-key
