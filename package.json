@@ -1,0 +1,40 @@
+{
+  "name": "foreign-key",
+  "version": "0.0.0",
+  "description": "group and reduce rows for foreign key relations for sorted key-value stores like leveldb",
+  "main": "index.js",
+  "dependencies": {
+    "bytewise": "~0.5.0",
+    "inherits": "~2.0.0",
+    "readable-stream": "~1.0.15"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4",
+    "level-test": "~1.5.1",
+    "through": "~2.3.4"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/foreign-key.git"
+  },
+  "homepage": "https://github.com/substack/foreign-key",
+  "keywords": [
+    "database",
+    "level",
+    "group",
+    "normal",
+    "form",
+    "denormalize",
+    "relational",
+    "sql"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
