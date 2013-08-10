@@ -2,9 +2,42 @@ var bytewise = require('bytewise');
 var Transform = require('readable-stream/transform');
 var inherits = require('inherits');
 
-module.exports = Group;
-inherits(Group, Transform);
+module.exports = Foreign;
+function Foreign (primary) {
+    if (!(this instanceof Foreign)) return new Foreign(primary);
+    this.primary = [].concat(primary);
+    this.filterMap = {};
+    this.keyMap = {};
+}
 
+Foreign.prototype.add = function (targetKey, filter, key) {
+    this.filterMap[targetKey] = [].concat(filter);
+    this.keyMap[targetKey] = [].concat(key);
+    return this;
+};
+
+Foreign.prototype.key = function (fkey, row) {
+    if (match(row, this.primary)) {
+        return encode([].concat(fkey));
+    }
+    
+    for (var key in this.keyMap) {
+        if (match(row, this.keyMap[key])) {
+            return encode([].concat(this.keyMap[key], fkey));
+        }
+    }
+    return undefined;
+    
+    function encode (key) {
+        return bytewise.encode(key).toString('hex');
+    }
+};
+
+Foreign.prototype.createStream = function () {
+    return new Group(this.primary, this.filterMap);
+};
+
+inherits(Group, Transform);
 function Group (primary, map) {
     if (!(this instanceof Group)) return new Group(primary, map);
     Transform.call(this, { objectMode: true });
