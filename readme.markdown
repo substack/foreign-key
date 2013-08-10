@@ -3,6 +3,8 @@
 generate keys for [sorted key-value stores](https://npmjs.org/package/level)
 to group and reduce rows by a foreign key
 
+[![build status](https://secure.travis-ci.org/substack/foreign-key.png)](http://travis-ci.org/substack/foreign-key)
+
 # example
 
 Given some data about hackerspaces, hackers, and items:
