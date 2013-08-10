@@ -1,4 +1,3 @@
-var encode = require('bytewise').encode;
 var through = require('through');
 var foreign = require('../');
 

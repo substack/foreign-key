@@ -31,7 +31,6 @@ hackerspace using `"space"` as a foreign key refering to the `"name"` of a
 hackerspace:
 
 ``` js
-var encode = require('bytewise').encode;
 var through = require('through');
 var foreign = require('foreign-key');
 

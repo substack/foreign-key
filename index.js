@@ -64,6 +64,7 @@ Group.prototype._transform = function (row, enc, next) {
 
 Group.prototype._flush = function () {
     if (this.current) this.push(this.current);
+    this.push(null);
 };
 
 function match (row, keys) {

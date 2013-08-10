@@ -1,0 +1,36 @@
+[
+  {
+    "type": "hackerspace",
+    "name": "i3",
+    "hackers": [
+      { "type": "hacker", "name": "nbritsky", "space": "i3" },
+      { "type": "hacker", "name": "rwolfe", "space": "i3" }
+    ]
+  },
+  {
+    "type": "hackerspace",
+    "name": "noisebridge",
+    "equipment": [
+      {
+        "type": "item", "name": "3d printer", "space": "noisebridge" },
+      { "type": "item", "name": "laser cutter", "space": "noisebridge" }
+    ],
+    "hackers": [
+      { "type": "hacker", "name": "ioerror", "space": "noisebridge" },
+      { "type": "hacker", "name": "mitch", "space": "nosiebridge" }
+    ]
+  },
+  {
+    "type": "hackerspace",
+    "name": "sudoroom",
+    "equipment": [
+      { "type": "item", "name": "3d printer", "space": "sudoroom" },
+      { "type": "item", "name": "piano", "space": "sudoroom" }
+    ],
+    "hackers": [
+      { "type": "hacker", "name": "mk30", "space": "sudoroom" },
+      { "type": "hacker", "name": "substack", "space": "sudoroom" },
+      { "type": "hacker", "name": "wrought", "space": "sudoroom" }
+    ]
+  }
+]
