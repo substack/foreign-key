@@ -1,0 +1,12 @@
+[
+  { "type": "hackerspace", "name": "sudoroom" },
+  { "type": "hacker", "name": "substack", "space": "sudoroom"},
+  { "type": "hackerspace", "name": "noisebridge" },
+  { "type": "hacker", "name": "mitch", "space": "nosiebridge" },
+  { "type": "hacker", "name": "mk30", "space": "sudoroom" },
+  { "type": "hacker", "name": "rwolfe", "space": "i3" },
+  { "type": "hacker", "name": "ioerror", "space": "noisebridge" },
+  { "type": "hacker", "name": "wrought", "space": "sudoroom" },
+  { "type": "hacker", "name": "nbritsky", "space": "i3" },
+  { "type": "hackerspace", "name": "i3" }
+]
