@@ -1,6 +1,6 @@
 {
   "name": "foreign-key",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "group and reduce rows for foreign key relations for sorted key-value stores like leveldb",
   "main": "index.js",
   "dependencies": {
