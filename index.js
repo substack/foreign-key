@@ -25,8 +25,7 @@ Foreign.prototype.key = function (fkey, row) {
         if (match(row, this.filterMap[key])
         && match(row, this.keyMap[key])) {
             return encode([].concat(
-                row[this.keyMap[key][0]],
-                fkey
+                row[this.keyMap[key][0]], key, fkey
             ));
         }
     }
