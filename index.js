@@ -17,23 +17,26 @@ Foreign.prototype.add = function (targetKey, filter, key) {
 };
 
 Foreign.prototype.key = function (fkey, row) {
+    var kl = this.keyList(fkey, row);
+    return kl ? encode(kl) : kl;
+    
+    function encode (key) {
+        return bytewise.encode(key).toString('hex');
+    }
+};
+
+Foreign.prototype.keyList = function (fkey, row) {
     if (match(row, this.primary)) {
-        return encode([].concat(fkey));
+        return [].concat(fkey);
     }
     
     for (var key in this.keyMap) {
         if (match(row, this.filterMap[key])
         && match(row, this.keyMap[key])) {
-            return encode([].concat(
-                row[this.keyMap[key][0]], key, fkey
-            ));
+            return [].concat(row[this.keyMap[key][0]], key, fkey);
         }
     }
     return undefined;
-    
-    function encode (key) {
-        return bytewise.encode(key).toString('hex');
-    }
 };
 
 Foreign.prototype.createStream = function () {

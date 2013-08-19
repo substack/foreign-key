@@ -99,6 +99,11 @@ into primary rows `targetKey`.
 Return the new key to use for the ordinary unique identifier `key` given the
 foreign key rules applicable to `row`.
 
+## g.keyList(key, row)
+
+Return the array of elements that `g.key()` passes to
+[`bytewise.encode()`](https://npmjs.org/package/bytewise).
+
 ## g.createStream()
 
 Create a through stream that takes row objects as input and combines results
