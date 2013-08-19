@@ -22,8 +22,12 @@ Foreign.prototype.key = function (fkey, row) {
     }
     
     for (var key in this.keyMap) {
-        if (match(row, this.keyMap[key])) {
-            return encode([].concat(row[this.keyMap[key][0]], fkey));
+        if (match(row, this.filterMap[key])
+        && match(row, this.keyMap[key])) {
+            return encode([].concat(
+                row[this.keyMap[key][0]],
+                fkey
+            ));
         }
     }
     return undefined;
